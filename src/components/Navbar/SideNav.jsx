@@ -67,10 +67,10 @@ const SideNav = () => {
 
             {/* Sidebar */}
             <div
-                className={`fixed top-0 left-0 w-[248px] sm:py-[200px] flex flex-col h-screen z-40 bg-[#121212] text-[#7E7F7F] md:pt-[100px] 
-                ${isOpen ? "block sm:pt-[200px]" : "hidden"}   md:block transition-all ease-in-out duration-300 justify-between`} // Hidden on small screens, shown on large screens
+                className={`fixed top-0 left-0 w-[248px] sm:pt-[200px] flex flex-col h-screen z-40 bg-[#121212] text-[#7E7F7F] md:pt-[100px] 
+                ${isOpen ? "flex " : "hidden"}   md:block transition-all ease-in-out duration-300 justify-between`} // Hidden on small screens, shown on large screens
             >
-                <div className="flex flex-col items-center gap-1 ml-[20px] justify-between">
+                <div className="flex flex-col items-center gap-1 mt-[150px] md:mt-[0] ml-[20px] justify-between">
                     {NavLinkItems.map((item) => (
                         <NavLink
                             key={item.id}
